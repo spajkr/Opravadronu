@@ -16,7 +16,7 @@ monthlyElement.addEventListener("click", () => {
   annuallyElement.classList.remove("bg-indigo-500");
   monthlyElement.classList.add("bg-indigo-500");
 
-  if (pricingMode === "annually") {
+  if (pricingMode === "lifetime") {
     annuallyPricingElement.classList.add("hidden");
     monthlyPricingElement.classList.remove("hidden");
   }
@@ -33,5 +33,5 @@ annuallyElement.addEventListener("click", () => {
     annuallyPricingElement.classList.remove("hidden");
   }
 
-  pricingMode = "annually";
+  pricingMode = "lifetime";
 });
